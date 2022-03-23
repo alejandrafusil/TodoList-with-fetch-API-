@@ -4,9 +4,9 @@ import { Tarea } from "./component/tarea.jsx";
 
 function App() {
 	const [listaTareas, setListaTareas] = useState([]);
-	/*
+
 	useEffect(() => {
-		fetch("")
+		fetch("https://assets.breatheco.de/apis/fake/todos/user/alejandrafusil")
 			.then((response) => response.json())
 			.then((data) => setListaTareas(data));
 	}, []);
@@ -39,12 +39,15 @@ function App() {
 			redirect: "follow",
 		};
 
-		fetch("", requestOptions)
+		fetch(
+			"https://assets.breatheco.de/apis/fake/todos/user/alejandrafusil",
+			requestOptions
+		)
 			.then((response) => response.text())
 			.then((result) => console.log(result))
 			.catch((error) => console.log("error", error));
 	};
-*/
+
 	return (
 		<div className="App">
 			<TareaForm nuevaTarea={nuevaTarea} />
