@@ -31,7 +31,8 @@ function App() {
 		myHeaders.append("Content-Type", "application/json");
 
 		var raw = JSON.stringify(listaNueva);
-
+     
+		/* probando los métodos PUT, POST y DELETE desde Postman  */
 		var requestOptions = {
 			method: "PUT",
 			headers: myHeaders,
